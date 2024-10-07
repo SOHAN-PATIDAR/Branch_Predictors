@@ -1,0 +1,9 @@
+https://www.dropbox.com/sh/hh09tt8myuz0jbp/AACAS5zMWHL7coVuS-RbpUksa?e=2&from_auth=register&dl=0
+
+1. cassandra_phase5_core0.trace.xz
+2. streaming_phase0_core1.trace.xz
+3. cloud9_phase5_core3.trace.xz
+
+https://dpc3.compas.cs.stonybrook.edu/champsim-traces/speccpu/
+
+4. 631.deepsjeng_s-928B.champsimtrace.xz
