@@ -1,0 +1,26 @@
+For Hybrid predictor the storage location was limited upto 64KB +/- 2KB and the division of storage between G-share and Tage is implemented for three different ratio:
+
+1. 50:50
+   
+   G-share will get 32KB
+   GS_HISTORY_TABLE_SIZE = 131072;
+   
+   Tage will get 32KB
+   const uint8_t TAGE_INDEX_BITS[TAGE_NUM_COMPONENTS] = {13, 13, 11, 11};  
+   const uint8_t TAGE_TAG_BITS[TAGE_NUM_COMPONENTS] = {6, 7, 5, 5}; 
+   
+2. 25:75
+   G-share will get 16KB
+   GS_HISTORY_TABLE_SIZE = 65536;
+   
+   Tage will get 48KB
+   const uint8_t TAGE_INDEX_BITS[TAGE_NUM_COMPONENTS] = {14, 13, 12, 12};  
+   const uint8_t TAGE_TAG_BITS[TAGE_NUM_COMPONENTS] = {6, 6, 6, 5};
+   
+ 3. 75:25
+   G-share will get 48KB
+   GS_HISTORY_TABLE_SIZE = 196608;
+   
+   Tage will get 16KB
+   const uint8_t TAGE_INDEX_BITS[TAGE_NUM_COMPONENTS] = {12, 12, 11, 10};  
+   const uint8_t TAGE_TAG_BITS[TAGE_NUM_COMPONENTS] = {5, 5, 4, 4};
