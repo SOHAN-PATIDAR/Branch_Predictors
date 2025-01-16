@@ -1,4 +1,4 @@
-This README file is for Q2 of Assignment_1 that eplains about the evaluation of different branch predictors using the Champsim simulator, their code and reults generated for them. For each branch predictor the hardware cost is considered equal roughly 64KB ± 2KB. Each predictor uses a BTB of 2048 entries which is not included in the storage budget.
+This README file is for Q2 of Assignment_1 that explains about the evaluation of different branch predictors using the Champsim simulator, their code and reults generated for them. For each branch predictor the hardware cost is considered equal roughly 64KB ± 2KB. Each predictor uses a BTB of 2048 entries which is not included in the storage budget.
 
 **NOTE** For this assignment detials of 4 tarces that are used is provided in traces_used.txt file, download them and copy them to traces folder.
 
